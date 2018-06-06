@@ -24,7 +24,7 @@ public class QuickUnion implements UnionFind {
 
     @Override
     public boolean connected(int p, int q) {
-        return find(p) == find(q) ? true : false;
+        return find(p) == find(q);
     }
 
     @Override

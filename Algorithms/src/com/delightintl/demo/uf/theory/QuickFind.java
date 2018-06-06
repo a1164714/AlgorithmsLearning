@@ -33,12 +33,14 @@ public class QuickFind implements UnionFind {
         return false;
     }
 
+    @Override
+    public int find(int p) {
+        return arr[p];
+    }
+
     public int count() {
         return count;
     }
 
-    public int find(int p) {
-        return arr[p];
-    }
 
 }

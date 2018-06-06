@@ -33,13 +33,13 @@ public class WeightedQU implements UnionFind {
 
     @Override
     public boolean connected(int p, int q) {
-        return find(p) == find(q) ? true : false;
+        return find(p) == find(q);
     }
 
     @Override
     public int find(int p) {
         while (arr[p] != p) {
-            arr[p] = arr[arr[p]]; // with path compression
+            // arr[p] = arr[arr[p]]; // with path compression
             p = arr[p];
         }
         return p;
