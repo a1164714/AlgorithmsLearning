@@ -3,16 +3,16 @@ package com.delightintl.demo.uf.pratice;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
-    private WeightedQuickUnionUF weightedQU;
+    private final WeightedQuickUnionUF weightedQU;
     private boolean[] openArr;
-    private int sideLength;
+    private final int sideLength;
     private int openNum = 0;
-    private int upGridIndex;
-    private int downGridIndex;
+    private final int upGridIndex;
+    private final int downGridIndex;
 
     // create n-by-n grid, with all sites blocked
     public Percolation(int n) {
-        if (n <= 0) throw new RuntimeException("n must be bigger than zero");
+        if (n <= 0) throw new IllegalArgumentException("n is Illegal Argument.");
         weightedQU = new WeightedQuickUnionUF(n * n + 2);
         upGridIndex = n * n;
         downGridIndex = n * n + 1;
@@ -50,7 +50,6 @@ public class Percolation {
         if (col - 1 > 0 && isOpen(row, col - 1)) {
             weightedQU.union(index, queryIndex(row, col - 1));
         }
-
     }
 
     // is site (row, col) open?
