@@ -22,57 +22,53 @@ public class Percolation {
         sideLength = n;
     }
 
+    private int queryIndex(int row, int col) {
+        return (row - 1) * sideLength + col - 1;
+    }
+
     // open site (row, col) if it is not open already
     public void open(int row, int col) {
         if (row <= 0 || row > sideLength) throw new IndexOutOfBoundsException("row index index out of bounds");
         if (col <= 0 || col > sideLength) throw new IndexOutOfBoundsException("col index index out of bounds");
-        int index = (row - 1) * sideLength + col - 1;
-        if (!isOpen(row, col)) {
-            openNum++;
-            openArr[index] = true;
-            if (row == 1) {
-                weightedQU.union(upGridIndex, index);
-            } else if (row == sideLength) {
-                weightedQU.union(downGridIndex, index);
-            }
-            if (row - 1 > 0 && isOpen(row - 1, col)) {
-                int index2 = (row - 2) * sideLength + col - 1;
-                weightedQU.union(index, index2);
-            }
-            if (row + 1 < sideLength && isOpen(row + 1, col)) {
-                int index2 = row * sideLength + col - 1;
-                weightedQU.union(index, index2);
-            }
-            if (col - 1 > 0 && isOpen(row, col - 1)) {
-                int index2 = (row - 1) * sideLength + col - 2;
-                weightedQU.union(index, index2);
-            }
-            if (col + 1 < sideLength  && isOpen(row, col + 1)) {
-                int index2 = (row - 1) * sideLength + col;
-                weightedQU.union(index, index2);
-            }
+        if (isOpen(row, col))
+            return;
+        int index = queryIndex(row, col);
+        openNum++;
+        openArr[queryIndex(row, col)] = true;
+        if (row == 1) {
+            weightedQU.union(upGridIndex, index);
         }
+        if (row - 1 > 0 && isOpen(row - 1, col)) {
+            weightedQU.union(index, queryIndex(row - 1, col));
+        }
+        if (col + 1 <= sideLength && isOpen(row, col + 1)) {
+            weightedQU.union(index, queryIndex(row, col + 1));
+        }
+        if (row + 1 <= sideLength && isOpen(row + 1, col)) {
+            weightedQU.union(index, queryIndex(row + 1, col));
+        }
+        if (col - 1 > 0 && isOpen(row, col - 1)) {
+            weightedQU.union(index, queryIndex(row, col - 1));
+        }
+
     }
 
     // is site (row, col) open?
     public boolean isOpen(int row, int col) {
         if (row <= 0 || row > sideLength) throw new IndexOutOfBoundsException("row index index out of bounds");
         if (col <= 0 || col > sideLength) throw new IndexOutOfBoundsException("col index index out of bounds");
-        int index = (row - 1) * sideLength + col - 1;
-        return openArr[index];
+        return openArr[queryIndex(row, col)];
     }
 
     // is site (row, col) full?
     public boolean isFull(int row, int col) {
         if (row <= 0 || row > sideLength) throw new IndexOutOfBoundsException("row index index out of bounds");
         if (col <= 0 || col > sideLength) throw new IndexOutOfBoundsException("col index index out of bounds");
-        if (percolates()) {
-            int index = (row - 1) * sideLength + col - 1;
-            int rootUpGrid = weightedQU.find(upGridIndex);
-            int rootIndex = weightedQU.find(index);
-            return rootUpGrid == rootIndex;
+        boolean connected = weightedQU.connected(upGridIndex, queryIndex(row, col));
+        if (connected && row == sideLength) {
+            weightedQU.union(downGridIndex, upGridIndex);
         }
-        return false;
+        return connected;
     }
 
     // number of open sites
