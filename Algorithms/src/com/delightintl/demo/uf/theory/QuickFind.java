@@ -15,7 +15,7 @@ public class QuickFind implements UnionFind {
     public void union(int p, int q) {
         if (!connected(p, q)) {
             for (int i = 0; i < arr.length; i++) {
-                if (arr[i] == arr[p]) {
+                if (arr[i] == p) {
                     arr[i] = q;
                 }
             }
