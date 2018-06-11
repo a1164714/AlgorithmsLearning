@@ -6,7 +6,7 @@ import com.delightintl.demo.stack.Stack;
 import java.util.Comparator;
 import java.util.Iterator;
 
-public class GetMinStack<T extends Comparable> implements Stack<T>{
+public class GetMinStack<T extends Comparable> implements Stack<T> {
     Stack<T> dataStack;
     Stack<T> minStack;
 
@@ -17,13 +17,24 @@ public class GetMinStack<T extends Comparable> implements Stack<T>{
 
 
     @Override
-    public void push(T  t) {
+    public void push(T t) {
+        dataStack.push(t);
         T peek = minStack.peek();
+        if (t.compareTo(peek) < 0) {
+            minStack.push(t);
+        } else {
+            dataStack.push(peek);
+        }
+    }
+
+    public T getMin() {
+        return minStack.peek();
     }
 
     @Override
     public T pop() {
-        return null;
+        minStack.pop();
+        return dataStack.pop();
     }
 
     @Override

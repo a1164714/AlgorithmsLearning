@@ -1,6 +1,5 @@
 package com.delightintl.demo.queue;
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -27,15 +26,15 @@ public class LinkedListQueue<T> implements Queue<T> {
 
     @Override
     public void enqueue(T t) {
-        size++;
         Node node = new Node(t);
-        if (last == null) {
+        if (empty()) {
             first = node;
             last = node;
         } else {
             last.next = node;
             last = node;
         }
+        size++;
     }
 
     @Override
@@ -114,5 +113,7 @@ public class LinkedListQueue<T> implements Queue<T> {
         System.out.println();
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+
     }
 }
