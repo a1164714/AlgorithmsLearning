@@ -16,6 +16,8 @@ public class ShellSort {
     }
 
     public static void shellSort(Comparable[] arr) {
+        if (arr == null && arr.length < 2)
+            return;
         int h = 1;
         int N = arr.length;
         while (h < N / 3)
