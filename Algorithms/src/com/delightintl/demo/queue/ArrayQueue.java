@@ -36,9 +36,6 @@ public class ArrayQueue<T> implements Queue<T> {
 
     @Override
     public void enqueue(T t) {
-        if (size == arr.length) {
-            throw new RuntimeException("queue is full.");
-        }
         if (size >= arr.length * 3 / 4) {
             resize(arr.length * 2);
         }
@@ -64,23 +61,19 @@ public class ArrayQueue<T> implements Queue<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new ArrayIterator<>(arr, tail, size);
+        return new ArrayIterator<T>(tail);
     }
 
     private class ArrayIterator<T> implements Iterator<T> {
-        private T[] arr;
         private int tail;
-        private int size;
 
-        public ArrayIterator(T[] arr, int tail, int size) {
-            this.arr = arr;
+        public ArrayIterator(int tail) {
             this.tail = tail;
-            this.size = size;
         }
 
         @Override
         public boolean hasNext() {
-            return size > 0;
+            return arr[tail] != null;
         }
 
         @Override
@@ -88,9 +81,8 @@ public class ArrayQueue<T> implements Queue<T> {
             if (!hasNext()) {
                 throw new RuntimeException("queue is full.");
             }
-            T t = arr[tail++];
+            T t = (T) arr[tail++];
             tail = tail == arr.length ? 0 : tail;
-            size--;
             return t;
         }
     }
@@ -103,8 +95,9 @@ public class ArrayQueue<T> implements Queue<T> {
         if (size <= arr.length / 4) {
             resize(arr.length / 2);
         }
-        T t = arr[tail++];
-        head = head == arr.length ? 0 : head;
+        T t = arr[tail];
+        arr[tail] = null;
+        tail = ++tail == arr.length ? 0 : tail;
         size--;
         return t;
     }
