@@ -124,5 +124,6 @@ public class ArrayQueue<T> implements Queue<T> {
         System.out.println();
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
     }
 }

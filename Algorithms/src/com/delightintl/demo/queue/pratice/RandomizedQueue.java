@@ -1,33 +1,26 @@
 package com.delightintl.demo.queue.pratice;
 
-import com.delightintl.demo.queue.ArrayQueue;
-import com.delightintl.demo.queue.Queue;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class RandomizedQueue<T> implements Iterable<T> {
-    private T[] arr;
+public class RandomizedQueue<Item> implements Iterable<Item> {
+    private Item[] arr;
     private int size;
-    private int head;
-    private int tail;
 
     public RandomizedQueue() {
-        arr = (T[]) new Object[2];
+        arr = (Item[]) new Object[2];
         size = 0;
-        head = 0;
-        tail = 0;
     }
 
     private void resize(int newLength) {
-        T[] newArr = (T[]) new Object[newLength];
+        Item[] newArr = (Item[]) new Object[newLength];
         for (int i = 0; i < size; i++) {
-            newArr[i] = arr[tail++];
-            tail = tail == arr.length ? 0 : tail;
+            newArr[i] = arr[i];
         }
-        head = size;
-        tail = 0;
         arr = newArr;
     }
 
@@ -39,90 +32,70 @@ public class RandomizedQueue<T> implements Iterable<T> {
         return size;
     }
 
-    public void enqueue(T t) {
-        if (t == null)
+    public void enqueue(Item item) {
+        if (item == null)
             throw new IllegalArgumentException();
-        if (size >= arr.length * 3 / 4) {
+        if (size == arr.length) {
             resize(arr.length * 2);
         }
-        arr[head++] = t;
-        head = head == arr.length ? 0 : head;
-        size++;
+        arr[size++] = item;
     }
 
-    private void swap(int i, int j) {
-        T tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
-
-    public T dequeue() {
+    public Item dequeue() {
         if (isEmpty())
             throw new NoSuchElementException();
         if (size <= arr.length / 4) {
             resize(arr.length / 2);
         }
         int uniform = StdRandom.uniform(size);
-        int index = tail + uniform < arr.length ? tail + uniform : tail + uniform - arr.length - 1;
-        swap(tail, index);
-        T t = arr[tail];
-        arr[tail] = null;
-        tail = ++tail == arr.length ? 0 : tail;
-        size--;
-        return t;
+        Item item = arr[uniform];
+        arr[uniform] = arr[size - 1];
+        arr[--size] = null;
+        return item;
     }
 
-    public T sample() {
+    public Item sample() {
         if (isEmpty())
             throw new NoSuchElementException();
         int uniform = StdRandom.uniform(size);
-        int index = tail + uniform < arr.length ? tail + uniform : tail + uniform - arr.length - 1;
-        swap(tail, index);
-        return arr[tail];
+        return arr[uniform];
     }
 
     @Override
-    public Iterator<T> iterator() {
-        return new ArrayIterator<T>(tail);
+    public Iterator<Item> iterator() {
+        return new ArrayIterator(size);
     }
 
-    private class ArrayIterator<T> implements Iterator<T> {
-        private int tail;
+    private class ArrayIterator<Item> implements Iterator<Item> {
+        private int index;
+        private int[] list;
 
-        public ArrayIterator(int tail) {
-            this.tail = tail;
+        public ArrayIterator(int size) {
+            index = size;
+            list = new int[size];
+            for (int i = 0; i < index; i++) {
+                list[i] = i;
+            }
+            StdRandom.shuffle(list);
         }
 
         @Override
         public boolean hasNext() {
-            return arr[tail] != null;
+            return index >= 0;
         }
 
         @Override
-        public T next() {
-            if (!hasNext()) {
-                throw new RuntimeException("queue is full.");
-            }
-            T t = (T) arr[tail++];
-            tail = tail == arr.length ? 0 : tail;
-            return t;
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override
+        public Item next() {
+            if (!hasNext())
+                throw new NoSuchElementException();
+            int i = list[index--];
+            return (Item) arr[i];
         }
     }
-    public static void main(String[] args) {
-        RandomizedQueue<Integer> queue = new RandomizedQueue<>();
-        queue.enqueue(8);
-        queue.enqueue(3);
-        queue.enqueue(2);
-        queue.enqueue(10);
-        System.out.println(queue.isEmpty());
-        System.out.println(queue.size());
-        System.out.println(queue.sample());
-        System.out.println(queue.sample());
-        System.out.println(queue.sample());
-        System.out.println(queue.sample());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
-    }
+
 }

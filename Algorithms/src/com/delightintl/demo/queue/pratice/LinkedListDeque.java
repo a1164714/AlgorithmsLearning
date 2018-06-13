@@ -5,10 +5,10 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class LinkedListDeque<T> implements Deque<T> {
+public class LinkedListDeque<Item> implements Deque<Item> {
     private int size;
-    private Node<T> first;
-    private Node<T> last;
+    private Node<Item> first;
+    private Node<Item> last;
 
     public LinkedListDeque() {
         size = 0;
@@ -24,60 +24,60 @@ public class LinkedListDeque<T> implements Deque<T> {
         return size;
     }
 
-    public void addFirst(T t) {
-        if (t == null)
+    public void addFirst(Item item) {
+        if (item == null)
             throw new IllegalArgumentException();
         if (isEmpty()) {
-            first = new Node(null, null, t);
+            first = new Node(null, null, item);
             last = first;
         } else {
-            first.pre = new Node(null, first, t);
+            first.pre = new Node(null, first, item);
             first = first.pre;
         }
         size++;
     }
 
-    public void addLast(T t) {
-        if (t == null)
+    public void addLast(Item item) {
+        if (item == null)
             throw new IllegalArgumentException();
         if (isEmpty()) {
-            last = new Node(null, null, t);
+            last = new Node(null, null, item);
             first = last;
         } else {
-            last.next = new Node(last, null, t);
+            last.next = new Node(last, null, item);
             last = last.next;
         }
         size++;
     }
 
-    public T removeFirst() {
+    public Item removeFirst() {
         if (isEmpty())
             throw new NoSuchElementException();
         size--;
-        T t = first.t;
+        Item item = first.t;
         if (last == first)
             last = null;
         if (first.next != null)
             first.next.pre = null;
         first = first.next;
-        return t;
+        return item;
     }
 
-    public T removeLast() {
+    public Item removeLast() {
         if (isEmpty())
             throw new NoSuchElementException();
         size--;
-        T t = last.t;
+        Item item = last.t;
         if (last == first)
             first = null;
         if (last.pre != null)
             last.pre.next = null;
         last = last.pre;
-        return t;
+        return item;
     }
 
     @Override
-    public Iterator<T> iterator() {
+    public Iterator<Item> iterator() {
         return new LinkedListIterator<>(first);
     }
 
@@ -95,6 +95,8 @@ public class LinkedListDeque<T> implements Deque<T> {
 
         @Override
         public T next() {
+            if (!hasNext())
+                throw new NoSuchElementException();
             T t = current.t;
             current = current.next;
             return t;

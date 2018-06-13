@@ -5,21 +5,21 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class ArrayDeque<T> implements Deque<T> {
-    private T[] arr;
+public class ArrayDeque<Item> implements Deque<Item> {
+    private Item[] arr;
     private int tail;
     private int head;
     private int size;
 
     public ArrayDeque() {
-        arr = (T[]) new Object[2];
+        arr = (Item[]) new Object[2];
         tail = 0;
         head = 0;
         size = 0;
     }
 
     private void resize(int newLength) {
-        T[] newArr = (T[]) new Object[newLength];
+        Item[] newArr = (Item[]) new Object[newLength];
         for (int i = 0; i < size; i++) {
             newArr[i] = arr[tail++];
             tail = tail == this.arr.length ? 0 : tail;
@@ -41,57 +41,57 @@ public class ArrayDeque<T> implements Deque<T> {
     }
 
     @Override
-    public void addFirst(T t) {
-        if (t == null)
+    public void addFirst(Item item) {
+        if (item == null)
             throw new IllegalArgumentException();
-        if (size >= arr.length * 3 / 4)
+        if (size == arr.length)
             resize(arr.length * 2);
         tail = --tail == -1 ? arr.length - 1 : tail;
-        arr[tail] = t;
+        arr[tail] = item;
         size++;
     }
 
     @Override
-    public void addLast(T t) {
-        if (t == null)
+    public void addLast(Item item) {
+        if (item == null)
             throw new IllegalArgumentException();
         if (size >= arr.length * 3 / 4)
             resize(arr.length * 2);
-        arr[head++] = t;
+        arr[head++] = item;
         head = head == arr.length ? 0 : head;
         size++;
     }
 
     @Override
-    public T removeFirst() {
+    public Item removeFirst() {
         if (isEmpty())
             throw new NoSuchElementException();
         if (size <= arr.length / 4) {
             resize(arr.length / 2);
         }
-        T t = arr[tail];
+        Item item = arr[tail];
         arr[tail] = null;
         tail = ++tail == arr.length ? 0 : tail;
         size--;
-        return t;
+        return item;
     }
 
     @Override
-    public T removeLast() {
+    public Item removeLast() {
         if (isEmpty())
             throw new NoSuchElementException();
         head = --head == -1 ? arr.length - 1 : head;
-        T t = arr[head];
+        Item item = arr[head];
         arr[head] = null;
         if (size <= arr.length / 4)
             resize(arr.length / 2);
         size--;
-        return t;
+        return item;
     }
 
     @Override
-    public Iterator<T> iterator() {
-        return new ArrayIterator<T>(tail);
+    public Iterator<Item> iterator() {
+        return new ArrayIterator<Item>(tail);
     }
 
     private class ArrayIterator<T> implements Iterator<T> {
