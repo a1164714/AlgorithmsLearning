@@ -1,7 +1,5 @@
 package com.delightintl.demo.sort;
 
-import edu.princeton.cs.algs4.In;
-
 import java.util.Arrays;
 
 public class ShellSort {
