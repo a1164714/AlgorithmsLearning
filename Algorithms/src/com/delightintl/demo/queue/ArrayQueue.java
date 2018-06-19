@@ -2,6 +2,7 @@ package com.delightintl.demo.queue;
 
 import com.delightintl.demo.stack.ArrayStack;
 import com.delightintl.demo.stack.Stack;
+import edu.princeton.cs.algs4.MaxPQ;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -36,7 +37,7 @@ public class ArrayQueue<T> implements Queue<T> {
 
     @Override
     public void enqueue(T t) {
-        if (size >= arr.length * 3 / 4) {
+        if (size == arr.length) {
             resize(arr.length * 2);
         }
         arr[head++] = t;
