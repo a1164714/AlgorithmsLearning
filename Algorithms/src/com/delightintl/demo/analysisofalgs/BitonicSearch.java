@@ -1,5 +1,8 @@
 package com.delightintl.demo.analysisofalgs;
 
+/**
+ * 双边函数查找
+ */
 public class BitonicSearch {
     public static int bitonicSearch(int[] arr, int target) {
         return bitonicSearch(arr, 0, arr.length - 1, target);

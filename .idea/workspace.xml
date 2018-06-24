@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArrayDeque.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/ArrayDeque.java">
+      <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="-110">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,47 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomizedQueue.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/RandomizedQueue.java">
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+            <state relative-caret-position="-644">
+              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#2181#2182#0" expanded="true" />
-                <element signature="e#2246#2247#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/ArrayQueue.java">
+      <file leaf-file-name="LineSegment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/LineSegment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
-              <folding>
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="method#resize#0;class#ArrayQueue#0" />
-                <element signature="class#ArrayIterator#0;class#ArrayQueue#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Permutation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/Permutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="572">
+              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -108,7 +84,6 @@
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/PercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/DemoQuickSort.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/ThreeSumQuadratic.java" />
-        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/BitonicSearch.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/stack/pratice/GetMinStack.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/stack/pratice/TwoQueueStack.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/stack/TwoQueueStack.java" />
@@ -122,6 +97,19 @@
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/ArrayDeque.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/LinkedListDeque.java" />
         <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/RandomizedQueue.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/BitonicSearch.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/a_mutipy/Board.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/a_mutipy/Solver.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/HeapSort.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/Heapxx.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/Heap.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/Merge.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/CountingInversion.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/LineSegment.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/input6.txt" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/Pet.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/BruteCollinearPoints.java" />
+        <option value="$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/Point.java" />
       </list>
     </option>
   </component>
@@ -146,7 +134,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,11 +145,6 @@
             <path>
               <item name="AlgorithmsLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,25 +158,21 @@
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AlgorithmsLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
               <item name="pratice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,11 +186,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src" />
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src\com\delightintl\demo\sort\pratice" />
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src\com\delightintl\demo\uf\pratice" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.delightintl.demo.sort.pratice" />
       <recent name="com.delightintl.demo.uf.pratice" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src\com\delightintl\demo\uf\pratice" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src" />
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms" />
+      <recent name="E:\develop\project\AlgorithmsLearning\Algorithms\src\com\delightintl\demo\queue\pratice\a_mutipy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -226,70 +213,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RandomizedQueue">
-    <configuration name="ArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.pratice.ArrayDeque" />
+  <component name="RunManager" selected="Application.BruteCollinearPoints">
+    <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.pratice.a_mutipy.Board" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.queue.pratice.*" />
+          <option name="PATTERN" value="com.delightintl.demo.queue.pratice.a_mutipy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ArrayQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.ArrayQueue" />
+    <configuration name="BruteCollinearPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.sort.pratice.BruteCollinearPoints" />
       <module name="Algorithms" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="LinkedListDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.pratice.LinkedListDeque" />
-      <module name="Algorithms" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.queue.pratice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.uf.pratice.PercolationStats" />
-      <module name="Algorithms" />
-      <option name="PROGRAM_PARAMETERS" value="200 100" />
+      <option name="PROGRAM_PARAMETERS" value="input8.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.uf.pratice.*" />
+          <option name="PATTERN" value="com.delightintl.demo.sort.pratice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="RandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.pratice.RandomizedQueue" />
+    <configuration name="BucketGetMaxInterval" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.sort.pratice.BucketGetMaxInterval" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.queue.pratice.*" />
+          <option name="PATTERN" value="com.delightintl.demo.sort.pratice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="TwoStackQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.queue.TwoStackQueue" />
+    <configuration name="CountingInversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.sort.pratice.CountingInversion" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.delightintl.demo.queue.*" />
+          <option name="PATTERN" value="com.delightintl.demo.sort.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Pet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.sort.pratice.Pet" />
+      <module name="Algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.delightintl.demo.sort.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Point" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.delightintl.demo.sort.pratice.Point" />
+      <module name="Algorithms" />
+      <option name="PROGRAM_PARAMETERS" value="input6.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.delightintl.demo.sort.pratice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -336,19 +324,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.TwoStackQueue" />
-      <item itemvalue="Application.LinkedListDeque" />
-      <item itemvalue="Application.ArrayDeque" />
-      <item itemvalue="Application.ArrayQueue" />
-      <item itemvalue="Application.RandomizedQueue" />
+      <item itemvalue="Application.CountingInversion" />
+      <item itemvalue="Application.Point" />
+      <item itemvalue="Application.BruteCollinearPoints" />
+      <item itemvalue="Application.BucketGetMaxInterval" />
+      <item itemvalue="Application.Pet" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RandomizedQueue" />
-        <item itemvalue="Application.ArrayQueue" />
-        <item itemvalue="Application.ArrayDeque" />
-        <item itemvalue="Application.LinkedListDeque" />
-        <item itemvalue="Application.TwoStackQueue" />
+        <item itemvalue="Application.BruteCollinearPoints" />
+        <item itemvalue="Application.Pet" />
+        <item itemvalue="Application.Point" />
+        <item itemvalue="Application.BucketGetMaxInterval" />
+        <item itemvalue="Application.CountingInversion" />
       </list>
     </recent_temporary>
   </component>
@@ -368,20 +356,22 @@
       <workItem from="1528458663079" duration="7647000" />
       <workItem from="1528718782365" duration="3462000" />
       <workItem from="1528804667334" duration="9829000" />
-      <workItem from="1528891531516" duration="6277000" />
+      <workItem from="1528891531516" duration="6963000" />
+      <workItem from="1529215568110" duration="6379000" />
+      <workItem from="1529307223744" duration="3254000" />
+      <workItem from="1529738502737" duration="8190000" />
+      <workItem from="1529808580281" duration="659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43876000" />
+    <option name="totallyTimeSpent" value="63044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32997763" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -389,11 +379,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3344519" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3344519" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32997763" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2683374" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23105134" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -406,7 +396,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="6" visible="true" weight="0.32997763" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32997763" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,150 +408,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/BruteCollinearPoints.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="15" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/WeightedQU.java">
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/LineSegment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/QuickUnionFindBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/Successor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/QuickFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/NetworkConnected.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="6" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/WeightedQU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/QuickUnionFindBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/Successor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/QuickFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/UnionFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/QuickFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/theory/WeightedQU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/QuickUnionFindBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/uf/pratice/Successor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="572">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -628,13 +494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/DemoQuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/DemoQuickSort.java" />
     <entry file="jar://$PROJECT_DIR$/../../software/java10/jdk/lib/src.zip!/java.base/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8438">
@@ -667,29 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/BitonicSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/ThreeSumQuadratic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -697,11 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1716">
           <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="117" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" selection-start-line="7" selection-end-line="80" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,33 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="242" column="26" selection-start-line="242" selection-start-column="26" selection-end-line="242" selection-end-column="26" />
-          <folding>
-            <element signature="e#10191#10192#0" expanded="true" />
-            <element signature="e#10232#10233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/ArrayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
-          <folding>
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="method#resize#0;class#ArrayQueue#0" />
-            <element signature="class#ArrayIterator#0;class#ArrayQueue#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/Permutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,42 +590,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1111">
           <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2067#2068#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2167#2168#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/ArrayDeque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="220">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/RandomizedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="94" column="51" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/ThreeSumQuadratic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../software/java10/jdk/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../software/java10/jdk/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="3720" column="21" lean-forward="true" selection-start-line="3720" selection-start-column="21" selection-end-line="3720" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/analysisofalgs/BitonicSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/ArrayQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/Permutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Algorithms/lib/algs4.jar!/edu/princeton/cs/algs4/MinPQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3960">
+          <caret line="207" column="31" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/a_mutipy/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/a_mutipy/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/HeapSort.java" />
+    <entry file="jar://$PROJECT_DIR$/Algorithms/lib/algs4.jar!/edu/princeton/cs/algs4/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/Heap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Algorithms/lib/algs4.jar!/edu/princeton/cs/algs4/Merge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" column="3" selection-start-line="66" selection-start-column="3" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/Merge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="30" column="52" lean-forward="true" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/CountingInversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="8" selection-start-line="8" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/BucketGetMaxInterval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/input6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/Algorithms.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/input6.txt" />
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/Pet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/queue/pratice/RandomizedQueue.java">
+    <entry file="file://$PROJECT_DIR$/Algorithms/src/com/delightintl/demo/sort/pratice/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+        <state relative-caret-position="-644">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
           </folding>
         </state>
       </provider>

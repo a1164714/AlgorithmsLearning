@@ -1,5 +1,7 @@
 package com.delightintl.demo.sort;
 
+import edu.princeton.cs.algs4.Heap;
+
 import java.util.Arrays;
 
 public class Merge {
@@ -21,28 +23,31 @@ public class Merge {
     }
 
     private static void sort(Comparable[] arr, Comparable[] aux, int lo, int hi) {
-        if (lo <= hi)
+        if (lo >= hi)
             return;
         int mid = lo + ((hi - lo) >> 1);
         sort(arr, aux, lo, mid);
         sort(arr, aux, mid + 1, hi);
-        if (!less(arr[mid+1], arr[mid])) return;
+//        if (!less(arr[mid + 1], arr[mid])) return;
         merge(arr, aux, lo, mid, hi);
     }
 
+
+
     private static void merge(Comparable[] arr, Comparable[] aux, int lo, int mid, int hi) {
-        for (int i = lo; i <= hi; i++)
-            aux[i] = arr[i];
-        int i = lo, j = mid + 1;
         for (int k = lo; k <= hi; k++) {
-            if (i > mid) arr[k] = aux[j++];
-            else if (j > hi) arr[k] = aux[i++];
-            else if (less(aux[i], aux[j])) arr[k] = aux[i++];
-            else arr[k] = aux[j++];
+            aux[k] = arr[k];
+        }
+        int i = lo, j = mid+1;
+        for (int k = lo; k <= hi; k++) {
+            if      (i > mid)              arr[k] = aux[j++];
+            else if (j > hi)               arr[k] = aux[i++];
+            else if (less(aux[j], aux[i])) arr[k] = aux[j++];
+            else                           arr[k] = aux[i++];
         }
     }
 
-    public static void sort(Integer[] arr) {
+    public static void sysSort(Integer[] arr) {
         Arrays.sort(arr);
     }
 
@@ -54,12 +59,12 @@ public class Merge {
     }
 
     public static void main(String[] args) {
-        Integer[] arr = {0, 1, 55, 4, 5, 2, 5, 6, 23, 35, 1, 24};
+        Integer[] arr = {1, 55, 0, 4, 5, 2, 5, 6, 23, 35, 1, 24};
         Integer[] cpArr = Arrays.copyOf(arr, arr.length);
-        Merge.sort(arr);
+        sort(arr);
         printArr(arr);
         //##################
-        sort(cpArr);
+        sysSort(cpArr);
         printArr(cpArr);
     }
 }
