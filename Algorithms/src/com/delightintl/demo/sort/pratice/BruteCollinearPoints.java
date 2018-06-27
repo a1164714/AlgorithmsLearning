@@ -5,17 +5,25 @@ import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class BruteCollinearPoints {
-    private int num;
-    private LineSegment[] segments;
+    private final int num;
+    private final LineSegment[] segments;
+    private Point[] points;
 
     // finds all line segments containing 4 points
-    public BruteCollinearPoints(Point[] points) {
-        num = 0;
+    public BruteCollinearPoints(Point[] pointsIn) {
         Stack<LineSegment> stack = new Stack<>();
-        int len = points.length;
+        if(pointsIn == null) throw new IllegalArgumentException("there is no point");
+        int len=pointsIn.length;
+        for(int i=0;i<len;i++) if(pointsIn[i]==null) throw new IllegalArgumentException("exist null point");
+        points = new Point[len];
+        for(int i=0;i<len;i++) points[i] = pointsIn[i];
+        Arrays.sort(points);
+        for(int i=1;i<len;i++) if(points[i-1].compareTo(points[i])==0) throw new IllegalArgumentException("exist repeated point");
+
         for (int i = 0; i < len; i++) {
             for (int j = i + 1; j < len; j++) {
                 for (int k = j + 1; k < len; k++) {
@@ -26,14 +34,13 @@ public class BruteCollinearPoints {
                     double slope2 = p2.slopeTo(p3);
                     if (slope1 != slope2)
                         continue;
-                    for (int l = k + 1; l < len; l++) {
-                        Point p4 = points[l];
+                    for (int z = k + 1; z < len; z++) {
+                        Point p4 = points[z];
                         double slope3 = p3.slopeTo(p4);
                         if (slope2 != slope3)
                             continue;
                         else {
                             Point[] tmps = new Point[]{p1, p2, p3, p4};
-                            num++;
                             Point max = tmps[0];
                             Point min = tmps[0];
                             for (int tmp = 0; tmp < tmps.length; tmp++) {
@@ -54,6 +61,7 @@ public class BruteCollinearPoints {
         while (iterator.hasNext()) {
             segments[i++] = iterator.next();
         }
+        num = segments.length;
     }
 
     // the number of line segments
@@ -63,7 +71,8 @@ public class BruteCollinearPoints {
 
     // the line segments
     public LineSegment[] segments() {
-        return segments;
+        LineSegment[] lineSegments = Arrays.copyOf(segments, segments.length);
+        return lineSegments;
     }
 
     public static void main(String[] args) {

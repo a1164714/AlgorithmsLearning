@@ -7,12 +7,12 @@ import java.util.Map;
 
 public class ThreeSumQuadratic {
     public static void main(String[] args) {
-        int[] arr = {};
+        Integer[] arr = {};
         int count = 0;
         Map<Integer, Integer> map = new HashMap();
         for (int i = 0; i < arr.length; i++)
             map.put(arr[i], i);
-        QuickSort.quickSort(arr);
+        new QuickSort().quickSort(arr);
         for (int j = 0; j < arr.length; j++) {
             for (int k = j + 1; k < arr.length; k++) {
                 int thirdVal = -(arr[j] + arr[k]);

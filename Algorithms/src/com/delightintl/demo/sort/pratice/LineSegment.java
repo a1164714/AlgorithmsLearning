@@ -26,7 +26,7 @@ public class LineSegment {
      */
     public LineSegment(Point p, Point q) {
         if (p == null || q == null) {
-            throw new NullPointerException("argument is null");
+            throw new IllegalArgumentException("argument is null");
         }
         this.p = p;
         this.q = q;
